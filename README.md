@@ -28,6 +28,10 @@ python -m venv venv
 source venv/bin/activate
 pip install google-genai
 ```
+### 2.2 IMPORTANT: Replace first lane of the script with your user name:
+```bash
+#!/home/USERNAME/IABash/venv/bin/python
+```
 
 ### 3. Make the Script Executable
 ```bash
