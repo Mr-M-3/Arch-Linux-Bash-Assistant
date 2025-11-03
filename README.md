@@ -34,8 +34,10 @@ pip install google-genai
 chmod +x Gemini.py
 ```
 ### 4. Add it as a Global Command
+```bash
 mkdir -p ~/bin
 ln -s ~/IABash/Gemini.py ~/bin/gemini
+```
 
 ### 5. Obtain your api key [Here](https://aistudio.google.com/app/api-keys) , and add it
 ```bash
