@@ -22,48 +22,48 @@ git clone https://github.com/Mr-M-3/Arch-Linux-Bash-Assistant.git ~/IABash
 cd ~/IABash
 ```
 
-###2. Create and activate a virtual environment
+### 2. Create and activate a virtual environment
 ```bash
 python -m venv venv
 source venv/bin/activate
 pip install google-genai
 ```
 
-###3. Make the Script Executable
+### 3. Make the Script Executable
 ```bash
 chmod +x Gemini.py
 ```
-###4. Add it as a Global Command
+### 4. Add it as a Global Command
 mkdir -p ~/bin
 ln -s ~/IABash/Gemini.py ~/bin/gemini
 
-###5. Obtain your api key [Here](https://aistudio.google.com/app/api-keys) , and add it
+### 5. Obtain your api key [Here](https://aistudio.google.com/app/api-keys) , and add it
 ```bash
 export GOOGLE_API_KEY="your_api_key_here"
 export PATH="$HOME/bin:$PATH"
 ```
 
-###6. Reload
+### 6. Reload
 ```bash
 source ~/.bashrc
 ```
 
-###Usage
+### Usage
 ```bash
 gemini hello,where is your config document
 ```
 ---
-###Comments
+### Comments
 This is a very simple Gemini model, so don’t expect it to be like any of today’s advanced models. 
 It’s very useful for asking about Bash commands if you forget something — that’s mainly what I use it for.
 Also, feel free to modify the prompt as you wish.
 I recommend including your PC model for better answers.
 
 ---
-###📄Lice
+### 📄Lice
 MIT License © 2025 Mr-M-3
 Feel free to modify and share this project.
 
-###❤️Contribute
+### ❤️Contribute
 Pull requests are welcome!
 If you have ideas to improve formatting, error handling, or add color themes, feel free to open an issue.
