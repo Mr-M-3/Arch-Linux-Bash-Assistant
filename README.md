@@ -48,8 +48,23 @@ ln -s ~/IABash/Gemini.py ~/bin/gemini
 export GOOGLE_API_KEY="your_api_key_here"
 export PATH="$HOME/bin:$PATH"
 ```
+### 6. Make it permanet
+```bash
+nano ~/.bashrc
+```
+Add at the end (crt + O paste)(crt + X save)
+```bash
+# Add Gemini to PATH
+export PATH="$HOME/bin:$PATH"
 
-### 6. Reload
+# Gemini API Key variable
+export GOOGLE_API_KEY="api_key_here"
+
+# Alias to launch Gemini using "gemini"
+alias gemini="$HOME/bin/gemini"
+```
+
+### 7. Reload
 ```bash
 source ~/.bashrc
 ```
